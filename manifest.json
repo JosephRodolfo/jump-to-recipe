@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Jump To Recipe",
+    "version": "1.0",
+  
+    "description": "Jump to Recipe automatically finds and clicks on 'Jump to Recipe' links, saving you from scouring a recipe's page to find the recipe or click the link yourself'",
+    "icons": {
+        "48": "icons/icon.png"
+      },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["jump.js"]
+      }
+    ]
+  }
+  
